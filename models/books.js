@@ -1,42 +1,25 @@
-const { Model, DataTypes } = require("sequelize");
-const sequelize = require("../config/connection.js");
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
-class books extends Model {}
-
-Books.init(
-  {
-    isbn: {
-      type: DataTypes.BIGINT,
-      allowNull: false,
-      primaryKey: true,
-    },
-    
-    title: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-
-    description:{
-    type: DataTypes.TEXT,
-    allowNull: false,
-    },
-
-    cover_img_url: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    author: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-
+const bookSchema = new Schema({
+  title: {
+    type: String,
+    required: true,
   },
-  {
-    sequelize,
-    freezeTableName: true,
-    underscored: true,
-    modelName: "books",
-  }
-);
 
-module.exports = books;
+  author: {
+    type: String,
+    required: false,
+  },
+  synopsis: {
+    type: String,
+  },
+  date: {
+    type: Date,
+    default: Date.now,
+  },
+});
+
+
+const Books = mongoose.model("Books",bookSchema) 
+module.exports = Books
