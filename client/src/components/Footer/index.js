@@ -2,9 +2,9 @@ import React from 'react'
 
 function Footer() {
     return (
-        <footer class="footer">
-        <div class="content has-text-centered">
-          <p> 
+        <footer className="footer has-background-grey-dark">
+        <div className="content has-text-centered">
+          <p className="has-text-white"> 
             <strong>Google Book Search</strong> by Emily Dobson
           </p>
         </div>
