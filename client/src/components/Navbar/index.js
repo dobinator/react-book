@@ -7,9 +7,9 @@ function Navbar() {
   // function toggleBurgerMenu() {
     // document.querySelector(".navbar-menu").classList.toggle("is-active");
   return (
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar" role="navigation" style={{ backgroundColor: "#a67b5b", border: "2px solid white" }}aria-label="main navigation">
       <div class="navbar-brand">
-        <h1 class="navbar-item is-size-4">Google Books</h1>
+        <h1 class="navbar-item" style={{color: "white", fontSize: "30px"}}>Google Books</h1>
         <a
           role="button"
           class="navbar-burger"
@@ -26,7 +26,9 @@ function Navbar() {
 
       <div id="navbarBasic" class="navbar-menu">
         <div class="navbar-start">
-        <Link to="/search" className="navbar-item" 
+        <Link to="/search" 
+        style={{ color: "white", fontSize: "18px"}}
+        className="navbar-item" 
           //  style={{ color: "white", fontSize: "18px" }}onClick={toggleBurgerMenu}
            >Search
           </Link>
