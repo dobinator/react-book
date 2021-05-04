@@ -1,4 +1,5 @@
 import React from 'react'
+import API from "./src/utils/API";
 
 function BookSearch() {
     return (
@@ -9,7 +10,7 @@ function BookSearch() {
             <strong>Search for a book</strong>
           </a>
           <p class="control" />
-            <input class="input" type="text" placeholder="Enter your city" />
+            <input class="input" type="text" placeholder="Enter the book title" />
             <p class="control">
               <button class="button is-primary">Search</button>
             </p>

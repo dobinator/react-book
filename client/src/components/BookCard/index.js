@@ -1,4 +1,5 @@
 import React from "react";
+import API from "./src/utils/API";
 // figure will need a style once thumbnail is grabbed.
 //paragraph might need to be fixed depending on the layout.
 
