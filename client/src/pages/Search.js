@@ -1,34 +1,34 @@
 import React from 'react';
-import BookCard from "./src/componets/Bookcard"; 
 import BookSearch from "./src/componets/BookSearch";
 import API from "./src/utils/API";
 
 
 
-const Search = () => {
-
-    
-const [userInput, setUserInput]= useState("");
-const [searchedBooks, setSearchedBooks]= useState([]); 
-
-
-
+class SearchBook extends Component {
+state= {
+search: "",
+books:[],
+error: "",
+}; 
 
 
+// function for the input field
+handleInputChange= event =>{
+this.setState({ search: event.target.value})
+}
+// function for the submit button
+handleFormSubmit = event=>{
+event.preventDefault();
 
 
+}
 
 
-
+render()
     return (
-
-
-
-        <div> 
      
         <BookSearch/>
-          
-        </div>
+    
     )
 }
 
