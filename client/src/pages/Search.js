@@ -1,9 +1,9 @@
-import React from 'react'
-import Navbar from "./src/components/Navbar"; 
-import Hero from "./src/components/Hero";
-import Footer from "./src/components/Footer";
+import React from 'react';
 import BookCard from "./src/componets/Bookcard"; 
+import BookSearch from "./src/componets/BookSearch";
 import API from "./src/utils/API";
+
+
 
 const Search = () => {
 
@@ -11,7 +11,6 @@ const Search = () => {
 const [userInput, setUserInput]= useState("");
 const [searchedBooks, setSearchedBooks]= useState([]); 
 
-}
 
 
 
@@ -19,15 +18,18 @@ const [searchedBooks, setSearchedBooks]= useState([]);
 
 
 
-function Search() {
+
+
     return (
-        <div> 
-          <Hero/>
 
+
+
+        <div> 
+     
+        <BookSearch/>
           
-          <Footer/> 
         </div>
     )
 }
 
-export default Search
+export default Search; 
