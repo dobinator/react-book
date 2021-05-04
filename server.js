@@ -16,7 +16,7 @@ app.use(routes);
 
 //connect to the Mongo DB
 mongoose.connect(
-    process.env.MONGODB_URI || "mongobd://localhost/react/book"
+    process.env.MONGODB_URI || "mongobd://localhost/reactBookdb"
 );
 
 // If no API routes are hit, send the React app 
