@@ -1,6 +1,6 @@
-import React from 'react';
-import BookSearch from "./src/componets/BookSearch";
-import API from "./src/utils/API";
+import React, { Component } from 'react';
+import BookSearch from "../components/BookSearch/index";
+import API from "../utils/API";
 
 
 
@@ -11,7 +11,17 @@ books:[],
 error: "",
 }; 
 
+search= ()=>{
+API.getGoogleBooks(this.state.search)
+.then(data=>{
+console.log(data) 
+this.setState({
+books: data.data.items,
+search: ""
+})
+}) .catch(err=>{console.log(err)})
 
+}
 // function for the input field
 handleInputChange= event =>{
 this.setState({ search: event.target.value})
@@ -19,17 +29,20 @@ this.setState({ search: event.target.value})
 // function for the submit button
 handleFormSubmit = event=>{
 event.preventDefault();
-
+this.search()
 
 }
 
 
-render()
+render(){
     return (
-     
-        <BookSearch/>
-    
+     <div>
+        <BookSearch 
+        handleInputChange={this.handleInputChange}
+        handleFormSubmit= {this.handleFormSubmit}
+        search={this.state.search}/>
+    </div>
     )
 }
-
-export default Search; 
+}
+export default SearchBook; 

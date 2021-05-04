@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 import API from "../utils/API";
-
+import SavedResult from "../components/SavedResult"; 
  
 class Save extends Component {
 state= {
@@ -12,11 +12,11 @@ componentDidMount(){
     .then((response)=>{
     this.setState({
     savedBooks: response.data})
-    }).catch((error)=>console.log(err))
+    }).catch((err)=>console.log(err))
 }  
-handleDeleteButton=
+// handleDeleteButton=
 
-}    
+// }    
     
     
     
@@ -33,6 +33,7 @@ handleDeleteButton=
         </div>
     )
     }
+}
 ; 
 
 export default Save;

@@ -4,8 +4,8 @@ import { Link, useLocation } from "react-router-dom";
 function Navbar() {
   const location = useLocation();
 
-  function toggleBurgerMenu() {
-    document.querySelector(".navbar-menu").classList.toggle("is-active");
+  // function toggleBurgerMenu() {
+    // document.querySelector(".navbar-menu").classList.toggle("is-active");
   return (
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
@@ -16,7 +16,7 @@ function Navbar() {
           aria-label="menu"
           aria-expanded="false"
           data-target="navbarBasic"
-          onClick={toggleBurgerMenu}
+          // onClick={toggleBurgerMenu}
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -27,15 +27,15 @@ function Navbar() {
       <div id="navbarBasic" class="navbar-menu">
         <div class="navbar-start">
         <Link to="/search" className="navbar-item" 
-           style={{ color: "white", fontSize: "18px" }}onClick={toggleBurgerMenu}>
-           Search
+          //  style={{ color: "white", fontSize: "18px" }}onClick={toggleBurgerMenu}
+           >Search
           </Link>
           <Link
             to="/save"
             style={{ color: "white", fontSize: "18px"}}
             className="navbar-item"
-            onClick={toggleBurgerMenu}
-          >
+          //   onClick={toggleBurgerMenu}
+           >
         Save
           </Link>
           
@@ -44,5 +44,5 @@ function Navbar() {
     </nav>
   );
 }
-}
+
 export default Navbar;

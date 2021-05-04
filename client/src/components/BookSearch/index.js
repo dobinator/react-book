@@ -18,7 +18,7 @@ const BookSearch = (props) => {
         <div className="control">
           <button
             className="button is-primary"
-            onClick={props.handleSubmitForm}
+            onClick={props.handleFormSubmit}
           >
             Submit
           </button>

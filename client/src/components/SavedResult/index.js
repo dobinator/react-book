@@ -26,9 +26,9 @@ function SavedResult(props) {
           <div className="control">
             <button className="button is-primary"
           id= {""}
-          onClick={()=>props.handleDeleteButton(savedbook._id)}>
+        >
             Delete Book</button>
-            <a href={savedbook.link}>
+            <a>
             <button className="button is-primary">View Book</button>
             </a>
           </div>
