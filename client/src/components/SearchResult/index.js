@@ -26,12 +26,12 @@ function SearchResult() {
             </p>
           </div>
           <div className="control">
-            <button className="button is-primary"
+            <button className="button is-dark"
           id= {""}
           onClick={()=>props.handleDeleteButton("")}>
             Save Book</button>
             <a href={""}>
-            <button className="button is-primary">View Book</button>
+            <button className="button is-dark">View Book</button>
             </a>
           </div>
         </div>
