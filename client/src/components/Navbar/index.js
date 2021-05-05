@@ -13,7 +13,7 @@ function Navbar() {
         <h1 className="navbar-item" style={{color: "white", fontSize: "35px"}}>Google Books</h1>
         <a
           role="button"
-          class="navbar-burger"
+          className="navbar-burger"
           aria-label="menu"
           aria-expanded="false"
           data-target="navbarBasic"
@@ -25,7 +25,7 @@ function Navbar() {
         </a>
       </div>
 
-      <div id="navbarBasic" class="navbar-menu">
+      <div id="navbarBasic" className="navbar-menu">
         <div className="navbar-start">
         <Link to="/search" 
         style={{ color: "white", fontSize: "18px", backgroundColor: "#8c9e5e"}}

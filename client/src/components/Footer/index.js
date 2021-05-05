@@ -8,6 +8,7 @@ function Footer() {
           <p> 
             <strong style= {{ color: "white", fontSize: "18px"}}>Google Book Search</strong> by Emily Dobson
           </p>
+          <p> Photography from Unsplash</p>
         </div>
       </footer>
       </section>

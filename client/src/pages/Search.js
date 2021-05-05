@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import BookSearch from "../components/BookSearch/index";
+// import SearchResult from "../components/SearchResult/index"
 import API from "../utils/API";
 
 
@@ -41,6 +42,7 @@ render(){
         handleInputChange={this.handleInputChange}
         handleFormSubmit= {this.handleFormSubmit}
         search={this.state.search}/>
+        {/* <SearchResult/> */}
     </div>
     )
 }

@@ -9,7 +9,7 @@ const BookSearch = (props) => {
         <div className="control">
           <input
             className="input"
-            style= {{ width: "50%"}}
+            style= {{ width: "50%",}}
             type="text"
             value={props.search}
             placeholder="Search for a book by title"
@@ -19,6 +19,9 @@ const BookSearch = (props) => {
         <div className="control">
           <button
             className="button is-dark"
+            style={{position:"absolute",
+              top: "10px",
+              left:10}}
             onClick={props.handleFormSubmit}
           >
             Submit
