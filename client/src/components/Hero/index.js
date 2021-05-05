@@ -12,7 +12,7 @@ function Hero() {
               style= {{
               fontSize: "55px", color:"#000036",
               position:"absolute", 
-              top: "50%",
+              top: "40%",
               left: "30%",}}> 
               
             Google Book Search
@@ -21,9 +21,10 @@ function Hero() {
               style={{
                fontSize:"30px", 
                color: "#000036",
-               top: "70%",
-              left: "40%",  
-               position:"absolute",}}>
+               top: "65%",
+              left: "40%", 
+              position: "absolute"
+              }}>
                 Search for and Save Books of Interest
               </p>
             </div>

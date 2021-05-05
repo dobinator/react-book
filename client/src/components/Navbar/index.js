@@ -4,7 +4,8 @@ import { Link, useLocation } from "react-router-dom";
 function Navbar() {
   const location = useLocation();
 
-  // function toggleBurgerMenu() {
+  // var dropdown= document.querySelector('.dropdown');
+  // dropdown.classList.toggle('isActive'); 
     // document.querySelector(".navbar-menu").classList.toggle("is-active");
   return (
     <nav class="navbar" role="navigation" style={{ backgroundColor: "#a67b5b"}}aria-label="main navigation">
@@ -34,7 +35,7 @@ function Navbar() {
           </Link>
           <Link
             to="/save"
-            style={{ color: "white", fontSize: "18px"}}
+            style={{ color: "white",  fontSize: "18px"}}
             className="navbar-item"
           //   onClick={toggleBurgerMenu}
            >

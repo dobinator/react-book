@@ -2,6 +2,7 @@ import React from 'react'
 
 function Footer() {
     return (
+      <section className="container-flex">
         <footer className="footer"style= {{backgroundColor: "#a67b5b"}}>
         <div className="content has-text-centered" style= {{ color: "white", fontSize: "18px"}}>
           <p> 
@@ -9,6 +10,7 @@ function Footer() {
           </p>
         </div>
       </footer>
+      </section>
     )
 }
 

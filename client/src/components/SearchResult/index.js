@@ -1,5 +1,7 @@
 import React from 'react'
 
+
+
 function SearchResult() {
     return (
 <section className="container-flex">
