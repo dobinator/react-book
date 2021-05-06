@@ -1,11 +1,11 @@
 import React from "react";
 
-function SearchResult() {
+function SearchResult(props) {
   return (
     <section className="container-flex">
       <div className="columns">
-        <div className="column">
           <h2 style={{ fontSize: "18px" }}>Search Results</h2>
+        <div className="column">
           <div className="card">
             <div className="media-content">
               <p className="title is-4">{props.title}</p>
@@ -31,7 +31,7 @@ function SearchResult() {
               <button
                 className="button is-dark"
                 id={""}
-                onClick={() => props.handleDeleteButton("")}
+                onClick={}
               >
                 Save Book
               </button>
