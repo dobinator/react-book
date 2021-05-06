@@ -23,6 +23,11 @@ search: ""
 }) .catch(err=>{console.log(err)})
 
 }
+
+// api need to retrieve the data from the arrays
+//title, authors, small thumbail, info link? 
+// which will get mapped over the cards?
+
 // function for the input field
 handleInputChange= event =>{
 this.setState({ search: event.target.value})
@@ -33,6 +38,7 @@ event.preventDefault();
 this.search()
 
 }
+
 
 
 render(){

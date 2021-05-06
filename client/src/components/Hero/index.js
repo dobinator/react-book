@@ -10,18 +10,20 @@ function Hero() {
         >
           <figure
             className="background image"
-            style={{ width: "100%", height: "auto", padding: 0 }}
+            style={{ width: "100%", height: "auto", padding: 0, position: "relative" }}
           />
           <img src="/images/books.png" alt="rainbow books" />
 
           <p
             className="title"
             style={{
+              textAlign: "center",
               fontSize: "55px",
               color: "white",
               position: "absolute",
               top: "40%",
               left: "30%",
+              transform:"translate(-10px, -40px)"
             }}
           >
             Google Book Search
