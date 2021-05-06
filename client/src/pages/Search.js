@@ -3,7 +3,7 @@ import BookSearch from "../components/BookSearch/index";
 // import SearchResult from "../components/SearchResult/index"
 import API from "../utils/API";
 
-
+//findAllBooks or is it getAllBooks? save Book, findOneBook or getOneBook?
 
 class SearchBook extends Component {
 state= {
