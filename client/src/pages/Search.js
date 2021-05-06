@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import BookSearch from "../components/BookSearch/index";
-// import SearchResult from "../components/SearchResult/index"
+import SearchResult from "../components/SearchResult/index"
 import API from "../utils/API";
 
 //findAllBooks or is it getAllBooks? save Book, findOneBook or getOneBook?
@@ -39,7 +39,13 @@ this.search()
 
 }
 
-
+saveBook= book=>{
+API.saveBook({
+id: book.id, title: book.title, authors: book.authors, 
+synopsis: book.synopsis, 
+}).then(data=>console.log(data))
+.catch(err=>console.log(err));
+}
 
 render(){
     return (
@@ -48,7 +54,15 @@ render(){
         handleInputChange={this.handleInputChange}
         handleFormSubmit= {this.handleFormSubmit}
         search={this.state.search}/>
-        {/* <SearchResult/> */}
+        {this.state.books.length ? (
+            <SearchResult saveBook= {this.saveBook} 
+            booksState={this.state.books}/>
+
+        ):(
+            <div>
+                <p>no results</p>
+            </div>
+        )}
     </div>
     )
 }

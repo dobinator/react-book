@@ -8,7 +8,7 @@ function Navbar() {
   // dropdown.classList.toggle('isActive'); 
     // document.querySelector(".navbar-menu").classList.toggle("is-active");
   return (
-    <nav className="navbar" role="navigation" style={{ backgroundColor: "#8c9e5e"}}aria-label="main navigation">
+    <nav className="navbar" role="navigation" style={{ backgroundColor: "#4a5d23"}}aria-label="main navigation">
       <div className="navbar-brand">
         <h1 className="navbar-item" style={{color: "white", fontSize: "35px"}}>Google Books</h1>
         <a
@@ -29,14 +29,14 @@ function Navbar() {
       <div id="navbarBasic" className="navbar-menu">
         <div className="navbar-start">
         <Link to="/search" 
-        style={{ color: "white", fontSize: "18px", backgroundColor: "#8c9e5e"}}
+        style={{ color: "white", fontSize: "18px", backgroundColor: "#4a5d23"}}
         className="navbar-item" 
           //  style={{ color: "white", fontSize: "18px" }}onClick={toggleBurgerMenu}
            >Search
           </Link>
           <Link
             to="/save"
-            style={{ color: "white",  fontSize: "18px", backgroundColor: "#8c9e5e"}}
+            style={{ color: "white",  fontSize: "18px", backgroundColor: "#4a5d23"}}
             className="navbar-item"
           //   onClick={toggleBurgerMenu}
            >

@@ -3,7 +3,7 @@ import React from "react";
 
 const BookSearch = (props) => {
   return (
-    <section>
+    <section className= "container-flex">
       <div className="field">
         <label className="label" style= {{fontSize: "18px", color: "black", padding: "10px" }}>Search for Books</label>
         <div className="control">

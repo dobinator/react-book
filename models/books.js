@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+idconst mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const bookSchema = new Schema({
@@ -6,7 +6,7 @@ const bookSchema = new Schema({
     type: String,
     required: true,
   },
-  author: {
+  authors: {
     type: String,
     required: false,
   },
