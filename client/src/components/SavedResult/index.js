@@ -12,7 +12,7 @@ function SavedResult(props) {
             <p className="subtitle is-6">Written by {props.author}</p>
           </div>
 
-          <div className="card-image is-4by3">
+          <div className="card-image" style={{ width: "150px", height: "150px"}}>
             <figure>
               <img src={props.image} alt="Book cover" />
             </figure>

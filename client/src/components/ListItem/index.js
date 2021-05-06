@@ -4,22 +4,23 @@ function ListItem(props) {
     return (
         <section className="container-flex">
         <div className="columns">
-            <h2 style={{ fontSize: "18px" }}>Search Results</h2>
           <div className=" is-flex is-flex-direction-column">
+              <div style={{marginTop: "20px"}}>
             <div className="card">
               <div className="media-content">
-                <p className="title is-4">{props.title}</p>
-                <p className="subtitle is-6">Written by {props.authors}</p>
+                <p className="title is-4"style= {{textAlign: "center" }}>{props.title}</p>
+                <p className="subtitle is-6"style= {{textAlign: "center" }}>Written by {props.authors}</p>
               </div>
   
               <div className="card-image">
-                <figure className = "image is-4by3">
+                <figure className = "image"style={{ width: "150px", height: "150px", }}>
                   <img src={props.image} alt="Book cover" />
                 </figure>
               </div>
               <div className="card-content">
-                <div className="media"></div>
-                <p className="content" style={{ textAlign: "right" }}>
+                <div className="media">
+                <p className="content" 
+                style={{textAlign: "center"}}>
                   {props.description}
                 </p>
               </div>
@@ -37,6 +38,8 @@ function ListItem(props) {
               </div>
             </div>
           </div>
+        </div>
+        </div>
         </div>
       </section>
     )
