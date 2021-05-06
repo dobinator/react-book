@@ -4,7 +4,7 @@ function SavedResult(props) {
   return (
     <section className="container-flex">
       <div className="columns">
-            <h2 style= {{fontSize: "18px", margin}}>Saved Books</h2>
+            <h2 style= {{fontSize: "18px"}}>Saved Books</h2>
         <div className= "column">
         <div className="card">
           <div className="media-content">
@@ -27,7 +27,7 @@ function SavedResult(props) {
             <a>
             <button className="button is-primary"
               id={""}
-              onClick={()}
+              // onClick={()}
               >View Book</button>
             </a>
             <button className="button is-primary"

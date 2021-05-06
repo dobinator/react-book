@@ -31,7 +31,7 @@ function SearchResult(props) {
               <button
                 className="button is-dark"
                 id={""}
-                onClick={}
+                // onClick={''}
               >
                 Save Book
               </button>

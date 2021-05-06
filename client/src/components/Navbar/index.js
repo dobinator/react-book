@@ -13,6 +13,7 @@ function Navbar() {
         <h1 className="navbar-item" style={{color: "white", fontSize: "35px"}}>Google Books</h1>
         <a
           role="button"
+          style= {{ color: "white"}}
           className="navbar-burger"
           aria-label="menu"
           aria-expanded="false"
