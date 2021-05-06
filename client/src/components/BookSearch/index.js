@@ -5,11 +5,11 @@ const BookSearch = (props) => {
   return (
     <section>
       <div className="field">
-        <label className="label" style= {{fontSize: "18px", color: "black"}}>Search for Books</label>
+        <label className="label" style= {{fontSize: "18px", color: "black", padding: "10px" }}>Search for Books</label>
         <div className="control">
           <input
             className="input"
-            style= {{ width: "50%",}}
+            style= {{ width: "50%", margin: "10px"}}
             type="text"
             value={props.search}
             placeholder="Search for a book by title"
