@@ -5,7 +5,7 @@ function SavedResult(props) {
     <section className="container-flex">
       <div className="columns">
             <h2 style= {{fontSize: "18px"}}>Saved Books</h2>
-        <div className= "column">
+        <div className= "is-flex is-flex-direction-column">
         <div className="card">
           <div className="media-content">
             <p className="title is-4">{props.title}</p>
