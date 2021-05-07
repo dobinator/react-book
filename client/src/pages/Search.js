@@ -60,9 +60,7 @@ render(){
 
         ):(
             <div>
-            <div>
-                <p>No results</p>
-            </div>
+                
             </div>
         )}
     </div>

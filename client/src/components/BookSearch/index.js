@@ -20,12 +20,15 @@ const BookSearch = (props) => {
           <button
             className="button is-dark"
             style={{position:"absolute",
-              top: "10px",
+              top: "3px",
               left:10}}
             onClick={props.handleFormSubmit}
           >
             Submit
           </button>
+          <br></br>
+          <br></br>
+        <p style={{fontSize: "18px", marginLeft:"10px"}}>No results</p>
         </div>
       </div>
     </section>
