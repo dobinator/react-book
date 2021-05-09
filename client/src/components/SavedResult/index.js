@@ -3,15 +3,14 @@ import React from "react";
 function SavedResult(props) {
   return (
     <section className="container-flex">
-      <div className="columns">
+      <div className="columnsis-flex-wrap-wrap is-justify-content-space-around">
         <h2 style={{ fontSize: "18px" }}>Saved Books</h2>
         <div
-          className="column"
+          className="column is-flex-direction"
           style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            marginTop: "50px",
+          marginLeft: "10px",
+          maxWidth: "500px",
+          marginTop: "50px",
           }}
         >
           <div className="card">
@@ -29,7 +28,8 @@ function SavedResult(props) {
 
             <div className="card-image">
               <figure
-                style={{ width: "150px", height: "150px", display: "flex"}}
+                style={{ width: "175px", height: "175px", display: "flex", marginLeft: "auto",
+                marginRight: "auto"}}
               >
                 <img src={props.image} alt="Book cover" />
               </figure>

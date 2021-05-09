@@ -3,18 +3,17 @@ import React from "react";
 function ListItem(props) {
   return (
     <section className="container-flex">
-      <div className="columns">
+      <div className="columns is-flex-wrap-wrap is-justify-content-space-around">
         <div
-          className="column"
+          className="column is-flex-direction"
           style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
+            marginLeft: "10px",
             marginTop: "50px",
+            maxWidth: "500px",
           }}
         >
           <div>
-            <div className="card">
+            <div className="card is-flex-direction-row">
               <div className="media-content">
                 <p className="title is-4" style={{ textAlign: "center"}}>
                   {props.title}
@@ -29,7 +28,8 @@ function ListItem(props) {
 
               <div className="card-image">
                 <figure
-                  style={{ width: "150px", height: "150px", display: "flex"}}
+                  style={{ width: "175px", height: "175px", display: "flex", marginLeft: "auto",
+                  marginRight: "auto"}}
                 >
                   <img src={props.image} alt="Book cover" />
                 </figure>
