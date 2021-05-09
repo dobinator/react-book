@@ -4,7 +4,8 @@ import React from "react";
 const BookSearch = (props) => {
   return (
     <section className= "container-flex">
-      <div className="field">
+      <div className="columns">
+        <div className= "column" style= {{ textAlign: "center", width: "50%",  justifyContent: "center"}}>
         <label className="label" style= {{fontSize: "18px", color: "black", padding: "10px" }}>Search for Books</label>
         <div className="control">
           <input
@@ -19,7 +20,7 @@ const BookSearch = (props) => {
         <div className="control">
           <button
             className="button is-dark"
-            style={{position:"absolute",
+            style={{justifyContent: "center",
               top: "3px",
               left:10}}
             onClick={props.handleFormSubmit}
@@ -30,6 +31,7 @@ const BookSearch = (props) => {
           <br></br>
         <p style={{fontSize: "18px", marginLeft:"10px"}}>No results</p>
         </div>
+      </div>
       </div>
     </section>
   );

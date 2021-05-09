@@ -45,11 +45,11 @@ function SavedResult(props) {
               </p>
             </div>
           </div>
-          <div className="control">
+          <div className="control" style={{ }}>
             <a>
               <button
                 className="button is-primary"
-                style={{ margin: "2px" }}
+                style={{ margin: "2px"}}
                 id={""}
                 // onClick={()}
               >
@@ -58,7 +58,7 @@ function SavedResult(props) {
             </a>
             <button
               className="button is-primary"
-              style={{ margin: "2px" }}
+              style={{ margin: "2px"}}
               id={""}
               onClick={() => props.handleDeleteButton("")}
             >

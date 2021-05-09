@@ -45,7 +45,7 @@ function ListItem(props) {
                   </p>
                 </div>
               </div>
-              <div className="control" >
+              <div className="control" style={{ textAlign: "center"}}>
                 <a href={""}>
                   <button className="button is-dark"style={{ margin: "2px"}}>View Book</button>
                 </a>
