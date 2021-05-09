@@ -8,9 +8,9 @@ function SavedResult(props) {
         <div
           className="column is-flex-direction"
           style={{
-          marginLeft: "10px",
-          maxWidth: "500px",
-          marginTop: "50px",
+            marginLeft: "10px",
+            maxWidth: "500px",
+            marginTop: "50px",
           }}
         >
           <div className="card">
@@ -28,42 +28,48 @@ function SavedResult(props) {
 
             <div className="card-image">
               <figure
-                style={{ width: "175px", height: "175px", display: "flex", marginLeft: "auto",
-                marginRight: "auto"}}
+                style={{
+                  width: "175px",
+                  height: "175px",
+                  display: "flex",
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                }}
               >
                 <img src={props.image} alt="Book cover" />
               </figure>
             </div>
 
             <div className="card-content">
-              <div className="media"></div>
-              <p
-                className="content"
-                style={{ fontSize: "16px", marginleft: "2rem"}}
-              >
-                {props.synopsis}
-              </p>
+              <div className="media">
+                <p
+                  className="content"
+                  style={{ fontSize: "16px", marginleft: "2rem" }}
+                >
+                  {props.synopsis}
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="control" style={{ }}>
-            <a>
+            <div className="control" style={{ textAlign: "center" }}>
+              <a>
+                <button
+                  className="button is-primary"
+                  style={{ margin: "2px" }}
+                  id={""}
+                  // onClick={()}
+                >
+                  View Book
+                </button>
+              </a>
               <button
                 className="button is-primary"
-                style={{ margin: "2px"}}
+                style={{ margin: "2px" }}
                 id={""}
-                // onClick={()}
+                onClick={() => props.handleDeleteButton("")}
               >
-                View Book
+                Delete Book
               </button>
-            </a>
-            <button
-              className="button is-primary"
-              style={{ margin: "2px"}}
-              id={""}
-              onClick={() => props.handleDeleteButton("")}
-            >
-              Delete Book
-            </button>
+            </div>
           </div>
         </div>
       </div>
