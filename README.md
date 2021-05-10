@@ -23,5 +23,8 @@ Link to deployed website:
 
 
 
-Still of website:
 
+Stills of website:
+
+![react book](client/public/images/Screen2.png)
+![react book](client/public/images/Screen1.png)
