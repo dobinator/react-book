@@ -1,5 +1,8 @@
 import React from "react";
 // functionality for view book
+
+//title, authors, small thumbail, info link? 
+// which will get mapped over the cards?
 function ListItem(props) {
   return (
     <section className="container-flex">

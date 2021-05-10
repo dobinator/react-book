@@ -31,7 +31,15 @@ componentDidMount(){
     
     return (
         <div>
-       <SavedResult/>
+            {/* <BookSearch 
+        handleInputChange={this.handleInputChange}
+        handleFormSubmit= {this.handleFormSubmit}
+        search={this.state.search}/> */}
+
+       <SavedResult
+       
+       
+       />
         </div>
     )
     }

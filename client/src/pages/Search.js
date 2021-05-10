@@ -25,8 +25,7 @@ search: ""
 }
 
 // api need to retrieve the data from the arrays
-//title, authors, small thumbail, info link? 
-// which will get mapped over the cards?
+
 
 // function for the input field
 handleInputChange= event =>{
@@ -46,6 +45,8 @@ synopsis: book.synopsis,
 }).then(data=>console.log(data))
 .catch(err=>console.log(err));
 }
+// functionality with the view button
+// viewBook 
 
 render(){
     return (
