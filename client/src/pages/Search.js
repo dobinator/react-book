@@ -36,12 +36,14 @@ class SearchBook extends Component {
     this.search();
   };
 
-  saveBook = (book) => {
+  saveBook = (id) => {
+    const book = this.state.books.find(book=> book.id===id)
+    console.log(book)
     API.saveBook({
       id: book.id,
       title: book.title,
       authors: book.authors,
-      synopsis: book.synopsis,
+      synopsis: book.description,
     })
       .then((data) => console.log(data))
       .catch((err) => console.log(err));

@@ -46,17 +46,16 @@ function SavedResult(props) {
                   className="content"
                   style={{ fontSize: "16px", marginleft: "2rem" }}
                 >
-                  {props.synopsis}
+                  {props.description}
                 </p>
               </div>
             </div>
             <div className="control" style={{ textAlign: "center" }}>
-              <a>
+              <a href= {props.link}>
                 <button
                   className="button"
                   style={{ margin: "2px", backgroundColor: "#002147", color: "white"}}
-                  id={""}
-                  // onClick={()}
+                
                 >
                   View Book
                 </button>
@@ -65,7 +64,7 @@ function SavedResult(props) {
                 className="button is-danger"
                 style={{ margin: "2px" }}
                 id={""}
-                onClick={() => props.handleDeleteButton("")}
+                onClick={() => props.handleDeleteButton(props.key)}
               >
                 Delete Book
               </button>

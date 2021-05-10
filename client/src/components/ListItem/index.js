@@ -4,6 +4,7 @@ import React from "react";
 //title, authors, small thumbail, info link?
 // which will get mapped over the cards?
 function ListItem(props) {
+  console.log(props)
   return (
     <section className="container-flex">
       <div className="columns is-flex-wrap-wrap is-justify-content-space-around">
@@ -74,7 +75,7 @@ function ListItem(props) {
                     backgroundColor: "#002147",
                     color: "white",
                   }}
-                  onClick={() => props.saveBook(props)}
+                  onClick={() => props.saveBook(props.id)}
                 >
                   Save Book
                 </button>
