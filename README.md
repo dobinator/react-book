@@ -16,9 +16,6 @@ n/a
  If you have any questions you can contact me through email, dobsonemily@gmail.com
 
 
-* Questions
-
-
 Link to deployed website:
 
 
