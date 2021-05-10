@@ -19,7 +19,7 @@ app.use(routes);
 mongoose.connect(
     process.env.MONGODB_URI || "mongodb://localhost/reactBookdb",
     {
-        useCreateIndex: true, useNewUrlParser: true
+        useCreateIndex: true, useNewUrlParser: true,  useFindAndModify: false, useUnifiedTopology: true,
     }
 );
 
