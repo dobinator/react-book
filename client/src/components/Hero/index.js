@@ -6,10 +6,12 @@ function Hero() {
       <div className="hero">
         <div
           className="hero-body"
-          style={{ padding: 0,
-             margin: "0%",
-             width: "100%", 
-             position: "relative" }}
+          style={{
+            padding: 0,
+            margin: "0%",
+            width: "100%",
+            position: "relative",
+          }}
         >
           <figure
             className="background image"

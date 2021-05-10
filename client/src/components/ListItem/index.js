@@ -1,7 +1,7 @@
 import React from "react";
 // functionality for view book
 
-//title, authors, small thumbail, info link? 
+//title, authors, small thumbail, info link?
 // which will get mapped over the cards?
 function ListItem(props) {
   return (
@@ -55,14 +55,25 @@ function ListItem(props) {
               </div>
               <div className="control" style={{ textAlign: "center" }}>
                 <a href={""}>
-                  <button className="button" style={{ margin: "2px", backgroundColor: "#002147", color: "white"}}>
+                  <button
+                    className="button"
+                    style={{
+                      margin: "2px",
+                      backgroundColor: "#002147",
+                      color: "white",
+                    }}
+                  >
                     View Book
                   </button>
                 </a>
 
                 <button
                   className="button"
-                  style={{ margin: "2px", backgroundColor: "#002147", color: "white"}}
+                  style={{
+                    margin: "2px",
+                    backgroundColor: "#002147",
+                    color: "white",
+                  }}
                   onClick={() => props.saveBook(props)}
                 >
                   Save Book
