@@ -55,14 +55,14 @@ function ListItem(props) {
               </div>
               <div className="control" style={{ textAlign: "center" }}>
                 <a href={""}>
-                  <button className="button is-dark" style={{ margin: "2px" }}>
+                  <button className="button" style={{ margin: "2px", backgroundColor: "#002147", color: "white"}}>
                     View Book
                   </button>
                 </a>
 
                 <button
-                  className="button is-dark"
-                  style={{ margin: "2px" }}
+                  className="button"
+                  style={{ margin: "2px", backgroundColor: "#002147", color: "white"}}
                   onClick={() => props.saveBook(props)}
                 >
                   Save Book

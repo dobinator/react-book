@@ -53,8 +53,8 @@ function SavedResult(props) {
             <div className="control" style={{ textAlign: "center" }}>
               <a>
                 <button
-                  className="button is-primary"
-                  style={{ margin: "2px" }}
+                  className="button"
+                  style={{ margin: "2px", backgroundColor: "#002147", color: "white"}}
                   id={""}
                   // onClick={()}
                 >
@@ -62,7 +62,7 @@ function SavedResult(props) {
                 </button>
               </a>
               <button
-                className="button is-primary"
+                className="button is-danger"
                 style={{ margin: "2px" }}
                 id={""}
                 onClick={() => props.handleDeleteButton("")}

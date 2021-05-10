@@ -27,7 +27,8 @@ function Hero() {
             style={{
               textAlign: "center",
               fontSize: "55px",
-              color: "white",
+
+              color: "#002147",
               position: "absolute",
               top: "40%",
               left: "30%",
@@ -40,7 +41,7 @@ function Hero() {
             className="subtitle"
             style={{
               fontSize: "30px",
-              color: "white",
+              color: "#002147",
               top: "65%",
               left: "40%",
               position: "absolute",

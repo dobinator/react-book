@@ -19,10 +19,10 @@ const BookSearch = (props) => {
         </div>
         <div className="control">
           <button
-            className="button is-dark"
+            className="button"
             style={{justifyContent: "center",
               top: "3px",
-              left:10}}
+              left:10, background: "#002147", color: "white"}}
             onClick={props.handleFormSubmit}
           >
             Submit
