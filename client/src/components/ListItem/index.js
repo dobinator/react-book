@@ -1,10 +1,12 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 // functionality for view book
 
 //title, authors, small thumbail, info link?
 // which will get mapped over the cards?
 function ListItem(props) {
   console.log(props)
+  const history = useHistory(); 
   return (
     <section className="container-flex">
       <div className="columns is-flex-wrap-wrap is-justify-content-space-around">
@@ -55,8 +57,10 @@ function ListItem(props) {
                 </div>
               </div>
               <div className="control" style={{ textAlign: "center" }}>
-                <a href={""}>
+              
                   <button
+                  onClick= {() => history.push(`/ViewBook/${props.id}`) 
+                  }
                     className="button"
                     style={{
                       margin: "2px",
@@ -66,7 +70,7 @@ function ListItem(props) {
                   >
                     View Book
                   </button>
-                </a>
+               
 
                 <button
                   className="button"

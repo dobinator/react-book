@@ -4,7 +4,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer"; 
 import Search from "./pages/Search";
 import Save from "./pages/Save";
-import Hero from "./components/Hero";
+import MainPageSection from "./components/MainPageSection"; 
+import ViewBook from "./components/ViewBook";
 
 
 
@@ -16,9 +17,10 @@ function App() {
     <Router>
       <div>
         <Navbar />
-        <Hero/>
+      <MainPageSection/>
         <Route exact path="/search" component={Search} />
         <Route exact path="/save" component={Save} />
+        <Route exact path="/ViewBook/:id" component={ViewBook} />
         <Footer/>
       </div>
     </Router>

@@ -6,19 +6,19 @@ function Navbar() {
     <nav
       className="navbar"
       role="navigation"
-      style={{ backgroundColor: "#002147" }}
+      style={{ backgroundColor:"#734f96" }}
       aria-label="main navigation"
     >
       <div className="navbar-brand">
         <h1
           className="navbar-item"
-          style={{ color: "white", fontSize: "35px" }}
+          style={{ color: "#fff", fontSize: "35px" }}
         >
-          Google Books
+         Dog Eared
         </h1>
         <a
           role="button"
-          style={{ color: "white" }}
+          style={{ color: "#fff" }}
           className="navbar-burger"
           aria-label="menu"
           aria-expanded="false"
@@ -36,9 +36,9 @@ function Navbar() {
           <Link
             to="/search"
             style={{
-              color: "white",
+              color: "#fff",
               fontSize: "18px",
-              backgroundColor: "#002147",
+              backgroundColor: "#734f96",
             }}
             className="navbar-item"
             //  style={{ color: "white", fontSize: "18px" }}onClick={toggleBurgerMenu}
@@ -48,9 +48,9 @@ function Navbar() {
           <Link
             to="/save"
             style={{
-              color: "white",
+              color: "#fff",
               fontSize: "18px",
-              backgroundColor: "#002147",
+              backgroundColor: "#734f96",
             }}
             className="navbar-item"
             //   onClick={toggleBurgerMenu}
