@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
+
+  function toggleBurgerMenu(){
+    document.querySelector(".navbar-menu").classList.toogle("is-active");
+  }
   return (
     <nav
       className="navbar"
@@ -12,23 +16,22 @@ function Navbar() {
       <div className="navbar-brand">
         <h1
           className="navbar-item"
-          style={{ color: "#fff", fontSize: "35px" }}
+          style={{ color: "#fff", fontSize: "40px" }}
         >
          Dog Eared
         </h1>
-        <a
-          role="button"
-          style={{ color: "#fff" }}
-          className="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasic"
-          // onClick={toggleBurgerMenu}
+        <button
+            style={{ color: "#fff" }}
+            className="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasic"
+            onClick={toggleBurgerMenu}
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
-        </a>
+        </button>
       </div>
 
       <div id="navbarBasic" className="navbar-menu">
@@ -37,11 +40,12 @@ function Navbar() {
             to="/search"
             style={{
               color: "#fff",
-              fontSize: "18px",
+              fontSize: "20px",
               backgroundColor: "#734f96",
+              fontWeight: "600"
             }}
             className="navbar-item"
-            //  style={{ color: "white", fontSize: "18px" }}onClick={toggleBurgerMenu}
+            // style={{ color: "#fff", fontSize: "18px" }}onClick={toggleBurgerMenu}
           >
             Search
           </Link>
@@ -49,15 +53,59 @@ function Navbar() {
             to="/save"
             style={{
               color: "#fff",
-              fontSize: "18px",
+              fontSize: "20px",
               backgroundColor: "#734f96",
+              fontWeight: "600"
             }}
             className="navbar-item"
             //   onClick={toggleBurgerMenu}
           >
             Save
           </Link>
+
+      <div className="navbar-item has-dropdown is-hoverable">
+        <Link className="navbar-link"
+        style= {{ color: "#fff",
+              fontSize: "20px",
+              backgroundColor: "#734f96",
+              fontWeight: "600"}}>
+          More
+        </Link>
+
+        <div className="navbar-dropdown">
+          <Link className="navbar-item" 
+          style ={{ color: "#fff",
+          fontSize: "20px",
+          backgroundColor: "#734f96",
+          fontWeight: "600"}}>
+            Calendar
+          </Link>
+          <Link className="navbar-item" 
+          style = {{
+            color: "#fff",
+          fontSize: "20px",
+          backgroundColor: "#734f96",
+          fontWeight: "600"
+          }}>
+            Menu
+          </Link>
+          <Link className="navbar-item"
+          style = {{color: "#fff",
+          fontSize: "20px",
+          backgroundColor: "#734f96",
+          fontWeight: "600"}}
+           > Contact Us
+          </Link>
+          <Link className="navbar-item" style= {{color: "#fff",
+          fontSize: "20px",
+          backgroundColor: "#734f96",
+          fontWeight: "600"}}>
+            Careers
+          </Link>
+           
         </div>
+       </div> 
+      </div>
       </div>
     </nav>
   );

@@ -3,12 +3,12 @@ import React from 'react'
 function Footer() {
     return (
       <section className="container-flex">
-        <footer className="footer"style= {{backgroundColor: "#002147"}}>
-        <div className="content has-text-centered" style= {{ color: "white", fontSize: "18px"}}>
+        <footer className="footer"style= {{backgroundColor: "#734f96"}}>
+        <div className="content has-text-centered" style= {{ color: "#fff", fontSize: "18px"}}>
           <p> 
-            <strong style= {{ color: "white", fontSize: "18px"}}>Google Book Search</strong> by Emily Dobson, 2021
+            <strong style= {{ color: "#fff", fontSize: "18px"}}>Dog Eared</strong> by Emily Dobson, 2021
           </p>
-          <p> Photography from Unsplash</p>
+          <p>free image, from KindPNG</p>
         </div>
       </footer>
       </section>

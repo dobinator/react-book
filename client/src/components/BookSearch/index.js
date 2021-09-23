@@ -6,7 +6,7 @@ const BookSearch = (props) => {
     <section className= "container-flex">
       <div className="columns">
         <div className= "column" style= {{ textAlign: "center", width: "50%",  justifyContent: "center"}}>
-        <label className="label" style= {{fontSize: "18px", color: "black", padding: "10px" }}>Search for Books</label>
+        <label className="label" style= {{fontSize: "18px", color: "#32174d", padding: "10px" }}>Search for your next book</label>
         <div className="control">
           <input
             className="input"
@@ -22,7 +22,7 @@ const BookSearch = (props) => {
             className="button"
             style={{justifyContent: "center",
               top: "3px",
-              left:10, background: "#002147", color: "white"}}
+              left:10, background: "#32174d", color: "#fff"}}
             onClick={props.handleFormSubmit}
           >
             Submit

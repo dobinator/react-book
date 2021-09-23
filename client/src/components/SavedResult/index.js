@@ -54,7 +54,7 @@ function SavedResult(props) {
               <a href= {props.link}>
                 <button
                   className="button"
-                  style={{ margin: "2px", backgroundColor: "#002147", color: "white"}}
+                  style={{ margin: "2px", backgroundColor: "#32174d", color: "fff"}}
                 
                 >
                   View Book

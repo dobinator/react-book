@@ -64,8 +64,8 @@ function ListItem(props) {
                     className="button"
                     style={{
                       margin: "2px",
-                      backgroundColor: "#002147",
-                      color: "white",
+                      backgroundColor: "#32174d",
+                      color: "#fff",
                     }}
                   >
                     View Book
@@ -76,8 +76,8 @@ function ListItem(props) {
                   className="button"
                   style={{
                     margin: "2px",
-                    backgroundColor: "#002147",
-                    color: "white",
+                    backgroundColor: "#32174d",
+                    color: "#fff",
                   }}
                   onClick={() => props.saveBook(props.id)}
                 >
