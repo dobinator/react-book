@@ -34,7 +34,7 @@ function Navbar() {
         </button>
       </div>
 
-      <div id="navbarBasic" className="navbar-menu">
+      <div id="navbarBasic" className="navbar-menu is-active">
         <div className="navbar-start">
           <Link
             to="/search"
@@ -78,7 +78,7 @@ function Navbar() {
           fontSize: "20px",
           backgroundColor: "#734f96",
           fontWeight: "600"}}>
-         Hours and Location
+         Hours and FAQ
           </Link>
           <Link className="navbar-item" 
           style ={{ color: "#fff",
@@ -109,7 +109,14 @@ function Navbar() {
           fontWeight: "600"}}>
             Careers
           </Link>
-           
+          </div>
+          </div>
+          <div class="navbar-end">
+          <div class="navbar-item" style={{color:"#fff", fontWeight: "600", fontSize: "16px", marginLeft: "30px"}}>
+            207 5th Avenue, Tucson AZ 
+        </div>
+        <div class="navbar-item" style={{color:"#fff", fontWeight: "600", fontSize: "16px",  marginLeft: "30px"}}>
+            520-555-5554
         </div>
        </div> 
       </div>

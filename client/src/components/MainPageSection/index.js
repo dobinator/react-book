@@ -8,8 +8,8 @@ function MainPageSection(){
         <h1 style= {{fontSize: "30px", fontWeight: "600", textAlign: "center", color: "#009f6b"}}>Fellow book and dog lovers unite</h1>
         <h2 style = {{fontSize:"24px", fontWeight: "400", textAlign: "center", marginBottom: "10px"}}> Come explore our store right in the heart of the historic district Tucson</h2>
         <div className= "columns">
-            <div className= "column" style= {{backgroundColor: "#f5f5f5", marginTop:"10px"}}>
-        <div style= {{textAlign:"center"}}>
+            <div className= "column" style= {{ marginTop:"10px"}}>
+        <div style= {{textAlign:"center", marginBottom: "20px"}}>
             <i className="las la-couch"></i>
             <ul>
             <li>On site coffee/ Bistro</li>
