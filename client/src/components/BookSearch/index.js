@@ -6,18 +6,18 @@ const BookSearch = (props) => {
     <section className= "container-flex">
       <div className="columns">
         <div className= "column" style= {{ textAlign: "center", width: "50%",  justifyContent: "center"}}>
-        <label className="label" style= {{fontSize: "18px", color: "#32174d", padding: "10px" }}>Search for your next book</label>
+        <label className="label" style= {{fontSize: "18px", color: "#32174d", padding: "10px", marginTop: "10px", marginBottom: "5px" }}>Search for your next book</label>
         <div className="control">
           <input
             className="input"
-            style= {{ width: "50%", margin: "10px"}}
+            style= {{ width: "40%", margin: "8px"}}
             type="text"
             value={props.search}
             placeholder="Search for a book by title"
             onChange={props.handleInputChange}
           />
         </div>
-        <div className="control">
+        <div className="control"></div>
           <button
             className="button"
             style={{justifyContent: "center",

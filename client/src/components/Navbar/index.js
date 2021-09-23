@@ -16,7 +16,7 @@ function Navbar() {
       <div className="navbar-brand">
         <h1
           className="navbar-item"
-          style={{ color: "#fff", fontSize: "40px" }}
+          style={{ color: "#fff", fontSize: "40px"}}
         >
          Dog Eared
         </h1>
@@ -64,7 +64,7 @@ function Navbar() {
           </Link>
 
       <div className="navbar-item has-dropdown is-hoverable">
-        <Link className="navbar-link"
+        <Link className="navbar-link is-arrowless"
         style= {{ color: "#fff",
               fontSize: "20px",
               backgroundColor: "#734f96",
