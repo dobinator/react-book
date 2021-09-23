@@ -5,16 +5,15 @@ function MainPageSection(){
     return (
         <div>
         <section className= "container">
-        <h1 style= {{fontSize: "30px", fontWeight: "600", textAlign: "center", color: "#009f6b"}}>Fellow book and dog lovers</h1>
+        <h1 style= {{fontSize: "30px", fontWeight: "600", textAlign: "center", color: "#009f6b"}}>Fellow book and dog lovers unite</h1>
         <h2 style = {{fontSize:"24px", fontWeight: "400", textAlign: "center", marginBottom: "10px"}}> Come explore our store right in the heart of the historic district Tucson</h2>
         <div className= "columns">
             <div className= "column" style= {{backgroundColor: "#f5f5f5", marginTop:"10px"}}>
-        <p style = {{ fontSize: "20px", fontWeight: "400", lineHeight: "1.8", marginTop: "15px", color: "#696969"}}>Since opening our doors in 2020,<strong> Dog Eared</strong> has become a fixture in the community. Independent Book store and local owned. </p>
         <div style= {{textAlign:"center"}}>
             <i className="las la-couch"></i>
             <ul>
-            <li>On site coffee</li>
-            <li>Bistro</li>
+            <li>On site coffee/ Bistro</li>
+            <li>Free Wifi</li>
             <li>Comfy seats</li>
             </ul>
             <br></br>
@@ -45,6 +44,7 @@ function MainPageSection(){
                 textAlign: "right"}}
                 />
             </figure> 
+            <p style = {{ fontSize: "18px", fontWeight: "400", lineHeight: "1.5", marginTop: "15px", color: "#696969"}}>Since opening our doors in 2000,<strong> Dog Eared</strong> has become a fixture in the community. We take pride in being an independent book store and local owned. We are currently only open by appointment due to COVID.</p>
         </div>
 
      </div>

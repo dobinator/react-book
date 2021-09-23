@@ -17,22 +17,23 @@ const BookSearch = (props) => {
             onChange={props.handleInputChange}
           />
         </div>
-        <div className="control"></div>
+        <div className="control">
           <button
             className="button"
             style={{justifyContent: "center",
               top: "3px",
               left:10, background: "#32174d", color: "#fff"}}
             onClick={props.handleFormSubmit}
-          >
+            >
             Submit
-          </button>
-          <br></br>
-          <br></br>
-        <p style={{fontSize: "18px", marginLeft:"10px"}}>No results</p>
+            </button>
+            <br></br>
+            <br></br>
+          <p style={{fontSize: "18px", marginLeft:"10px"}}>No results</p>
         </div>
       </div>
       </div>
+     
     </section>
   );
 };

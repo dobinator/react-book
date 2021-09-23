@@ -73,6 +73,13 @@ function Navbar() {
         </Link>
 
         <div className="navbar-dropdown">
+        <Link className="navbar-item" 
+          style ={{ color: "#fff",
+          fontSize: "20px",
+          backgroundColor: "#734f96",
+          fontWeight: "600"}}>
+         Hours and Location
+          </Link>
           <Link className="navbar-item" 
           style ={{ color: "#fff",
           fontSize: "20px",
