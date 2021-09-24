@@ -16,7 +16,10 @@ function Navbar() {
       <div className="navbar-brand">
         <h1
           className="navbar-item"
-          style={{ color: "#fff", fontSize: "40px"}}
+          style={{ 
+            color: "#fff", 
+            fontSize: "40px",
+            fontWeight: "500"}}
         >
          Dog Eared
         </h1>
@@ -42,7 +45,7 @@ function Navbar() {
               color: "#fff",
               fontSize: "20px",
               backgroundColor: "#734f96",
-              fontWeight: "600"
+              fontWeight: "500"
             }}
             className="navbar-item"
             // style={{ color: "#fff", fontSize: "18px" }}onClick={toggleBurgerMenu}
@@ -55,7 +58,7 @@ function Navbar() {
               color: "#fff",
               fontSize: "20px",
               backgroundColor: "#734f96",
-              fontWeight: "600"
+              fontWeight: "500"
             }}
             className="navbar-item"
             //   onClick={toggleBurgerMenu}
@@ -65,57 +68,70 @@ function Navbar() {
 
       <div className="navbar-item has-dropdown is-hoverable">
         <Link className="navbar-link is-arrowless"
-        style= {{ color: "#fff",
+        style= {{ 
+              color: "#fff",
               fontSize: "20px",
               backgroundColor: "#734f96",
-              fontWeight: "600"}}>
+              fontWeight: "500"}}>
           More
         </Link>
 
         <div className="navbar-dropdown">
         <Link className="navbar-item" 
-          style ={{ color: "#fff",
-          fontSize: "20px",
-          backgroundColor: "#734f96",
-          fontWeight: "600"}}>
+          style ={{ 
+              color: "#fff",
+              fontSize: "20px",
+              backgroundColor: "#734f96",
+              fontWeight: "500"}}>
          Hours and FAQ
           </Link>
           <Link className="navbar-item" 
           style ={{ color: "#fff",
-          fontSize: "20px",
-          backgroundColor: "#734f96",
-          fontWeight: "600"}}>
+              fontSize: "20px",
+              backgroundColor: "#734f96",
+              fontWeight: "500"}}>
             Calendar
           </Link>
           <Link className="navbar-item" 
           style = {{
-            color: "#fff",
-          fontSize: "20px",
-          backgroundColor: "#734f96",
-          fontWeight: "600"
+              color: "#fff",
+              fontSize: "20px",
+              backgroundColor: "#734f96",
+              fontWeight: "500"
           }}>
             Menu
           </Link>
           <Link className="navbar-item"
           style = {{color: "#fff",
-          fontSize: "20px",
-          backgroundColor: "#734f96",
-          fontWeight: "600"}}
+              fontSize: "20px",
+              backgroundColor: "#734f96",
+              fontWeight: "500"}}
            > Contact Us
           </Link>
-          <Link className="navbar-item" style= {{color: "#fff",
-          fontSize: "20px",
-          backgroundColor: "#734f96",
-          fontWeight: "600"}}>
+          <Link className="navbar-item" 
+          style= {{color: "#fff",
+              fontSize: "20px",
+              backgroundColor: "#734f96",
+              fontWeight: "500"}}>
             Careers
           </Link>
           </div>
           </div>
-          <div class="navbar-end">
-          <div class="navbar-item" style={{color:"#fff", fontWeight: "600", fontSize: "16px", marginLeft: "30px"}}>
+          <div className="navbar-end">
+          <div className="navbar-item" 
+          style={{
+              color:"#fff", 
+              fontWeight: "400", 
+              fontSize: "16px", 
+              marginLeft: "30px"}}>
             207 5th Avenue, Tucson AZ 
         </div>
-        <div class="navbar-item" style={{color:"#fff", fontWeight: "600", fontSize: "16px",  marginLeft: "30px"}}>
+        <div className="navbar-item" 
+        style={{
+          color:"#fff", 
+          fontWeight: "400", 
+          fontSize: "16px",  
+          marginLeft: "30px"}}>
             520-555-5554
         </div>
        </div> 

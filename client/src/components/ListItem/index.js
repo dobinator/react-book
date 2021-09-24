@@ -41,6 +41,7 @@ function ListItem(props) {
                     display: "flex",
                     marginLeft: "auto",
                     marginRight: "auto",
+                    textAlign: "center"
                   }}
                 >
                   <img src={props.image} alt="Book cover" />
