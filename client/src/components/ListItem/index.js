@@ -9,7 +9,6 @@ function ListItem(props) {
   const history = useHistory(); 
   return (
     <section className="container-flex" style={{backgroundColor:"#f4f0ec"}}>
-   
       <div className="columns is-flex-wrap-wrap is-justify-content-space-around">
         <div
           className="column is-flex-direction"

@@ -67,7 +67,8 @@ function Navbar() {
           </Link>
 
       <div className="navbar-item has-dropdown is-hoverable">
-        <Link className="navbar-link is-arrowless"
+        <Link to =""
+        className="navbar-link is-arrowless"
         style= {{ 
               color: "#fff",
               fontSize: "20px",
@@ -77,7 +78,9 @@ function Navbar() {
         </Link>
 
         <div className="navbar-dropdown">
-        <Link className="navbar-item" 
+        <Link
+        to=""
+        className="navbar-item" 
           style ={{ 
               color: "#fff",
               fontSize: "20px",
@@ -85,14 +88,18 @@ function Navbar() {
               fontWeight: "500"}}>
          Hours and FAQ
           </Link>
-          <Link className="navbar-item" 
+          <Link
+          to="" 
+          className="navbar-item" 
           style ={{ color: "#fff",
               fontSize: "20px",
               backgroundColor: "#734f96",
               fontWeight: "500"}}>
             Calendar
           </Link>
-          <Link className="navbar-item" 
+          <Link 
+          to=""
+          className="navbar-item" 
           style = {{
               color: "#fff",
               fontSize: "20px",
@@ -101,14 +108,18 @@ function Navbar() {
           }}>
             Menu
           </Link>
-          <Link className="navbar-item"
+          <Link 
+          to=""
+          className="navbar-item"
           style = {{color: "#fff",
               fontSize: "20px",
               backgroundColor: "#734f96",
               fontWeight: "500"}}
            > Contact Us
           </Link>
-          <Link className="navbar-item" 
+          <Link 
+          to= ""
+          className="navbar-item" 
           style= {{color: "#fff",
               fontSize: "20px",
               backgroundColor: "#734f96",
