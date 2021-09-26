@@ -1,10 +1,17 @@
 import React from "react";
 // functionality deleting and viewing
+
+
+
 function SavedResult(props) {
   return (
-    <section className="container-flex">
-      <div className="columnsis-flex-wrap-wrap is-justify-content-space-around">
-        <h2 style={{ fontSize: "18px" }}>Saved Books</h2>
+    <section className="container-flex" style={{backgroundColor:"#f4f0ec"}}>
+        <h2 className="title" 
+        style={{ fontSize: "26px", 
+        textAlign: "center", 
+        marginTop: "15px", 
+        color: "#32174d"}}>Saved Books</h2>
+      <div className="columns is-flex-wrap-wrap is-justify-content-space-around">
         <div
           className="column is-flex-direction"
           style={{
@@ -25,28 +32,13 @@ function SavedResult(props) {
                 Written by {props.author}
               </p>
             </div>
-
-            <div className="card-image">
-              <figure
-                style={{
-                  width: "175px",
-                  height: "175px",
-                  display: "flex",
-                  marginLeft: "auto",
-                  marginRight: "auto",
-                }}
-              >
-                <img src={props.image} alt="Book cover" />
-              </figure>
-            </div>
-
             <div className="card-content">
               <div className="media">
                 <p
                   className="content"
-                  style={{ fontSize: "16px", marginleft: "2rem" }}
+                  style={{ fontSize: "16px", marginleft: "2rem"}}
                 >
-                  {props.description}
+                  {props.synopsis}
                 </p>
               </div>
             </div>
@@ -54,7 +46,7 @@ function SavedResult(props) {
               <a href= {props.link}>
                 <button
                   className="button"
-                  style={{ margin: "2px", backgroundColor: "#32174d", color: "fff"}}
+                  style={{ margin: "2px", backgroundColor: "#32174d", color: "#fff"}}
                 
                 >
                   View Book

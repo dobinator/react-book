@@ -12,6 +12,7 @@ const bookSchema = new Schema({
   },
   synopsis: {
     type: String,
+    required: true,
   },
   date: {
     type: Date,

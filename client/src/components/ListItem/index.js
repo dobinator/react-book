@@ -51,7 +51,7 @@ function ListItem(props) {
                 <div className="media">
                   <p
                     className="content"
-                    style={{ fontSize: "16px", marginleft: "2rem" }}
+                    style={{ fontSize: "16px", marginleft: "2rem"}}
                   >
                     {props.description}
                   </p>

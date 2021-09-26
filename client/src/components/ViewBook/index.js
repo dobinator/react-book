@@ -22,7 +22,6 @@ function ViewBook() {
     
     return(
       <section> 
-        {/* {books.map(id => { */}
            <div className="columns is-flex-wrap-wrap is-justify-content-space-around" >
                 <div className= "column is-flex-direction"
                    style={{
