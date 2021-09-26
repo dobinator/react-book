@@ -5,16 +5,17 @@
 ## Index
 
 * Installation
-   This application has been deloyed using Heroku
-
 * Dependencies
+* Contact
+ 
+### Installation:
+ This application has been deloyed using Heroku
+
+### Dependencies:
   If you want to run this application pre-build, the dependecies can be invoked using npm install
 
-* Testing
-n/a
-* Contact
+### Contact:
  If you have any questions you can contact me through email, dobsonemily@gmail.com
-
 
 Link to deployed website:
 
@@ -23,5 +24,6 @@ Link to deployed website:
 
 Stills of website:
 
-![react book](client/public/images/Screen2.png)
 ![react book](client/public/images/Screen1.png)
+![react book](client/public/images/Screen2.png)
+![react book](client/public/images/Screen3.png)
