@@ -41,9 +41,9 @@ class SearchBook extends Component {
     console.log(book)
     API.saveBook({
       id: book.id,
-      title: book.title,
-      authors: book.authors,
-      synopsis: book.description,
+      title: book.volumeInfo.title,
+      authors: book.volumeInfo.authors,
+      synopsis: book.volumeInfo.description,
     })
       .then((data) => console.log(data))
       .catch((err) => console.log(err));

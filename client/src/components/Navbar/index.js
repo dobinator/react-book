@@ -63,7 +63,7 @@ function Navbar() {
             className="navbar-item"
             //   onClick={toggleBurgerMenu}
           >
-            Save
+            Saved
           </Link>
 
       <div className="navbar-item has-dropdown is-hoverable">

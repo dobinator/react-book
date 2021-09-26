@@ -1,4 +1,4 @@
-const Books = require ('../models');
+const Books = require ('../models/books');
 
 
 module.exports={
