@@ -22,7 +22,7 @@ function ViewBook() {
     
     return(
       <section> 
-           <div className="columns is-flex-wrap-wrap is-justify-content-space-around" >
+           <div className="columns is-flex-wrap-wrap is-justify-content-space-around"style={{backgroundColor:"#f4f0ec"}} >
                 <div className= "column is-flex-direction"
                    style={{
                     marginLeft: "10px",
@@ -58,7 +58,8 @@ function ViewBook() {
                     display: "flex",
                     marginLeft: "auto",
                     marginRight: "auto",
-                    textAlign: "center"
+                    textAlign: "center", 
+                    justifyContent: "center"
                   }}
                 >
                     <img src = 
@@ -76,18 +77,20 @@ function ViewBook() {
                      </p>
                     </div>
                     </div>
-                    <div className="control" style={{ textAlign: "center" }}>
+                    <div className="control" style={{ textAlign: "center", marginBottom: "30px" }}>
                         <button onClick= ""
                          className="button"
                          style={{
-                           margin: "2px",
+                           margin: "3px", 
+                           marginBottom: "3px",
                            backgroundColor: "#32174d",
                            color: "#fff",
-                         }}>Search</button>
+                         }}>Home</button>
                         <button onClick=""
                          className="button"
                          style={{
-                           margin: "2px",
+                           margin: "3px",
+                           marginBottom: "3px",
                            backgroundColor: "#32174d",
                            color: "#fff",
                          }}>Save</button>

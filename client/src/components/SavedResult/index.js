@@ -46,15 +46,21 @@ function SavedResult(props) {
               <a href= {props.link}>
                 <button
                   className="button"
-                  style={{ margin: "2px", backgroundColor: "#32174d", color: "#fff"}}
+                  style={{ margin: "2px", 
+                  backgroundColor: "#32174d", 
+                  color: "#fff",
+                  marginBottom:"3px",}}
                 
                 >
                   View Book
                 </button>
               </a>
               <button
-                className="button is-danger"
-                style={{ margin: "2px" }}
+                className="button"
+                style={{ margin: "2px",
+                backgroundColor: "#f50000",
+                marginBottom:"3px", 
+                color:"#fff"}}
                 id={""}
                 onClick={() => props.handleDeleteButton(props.key)}
               >

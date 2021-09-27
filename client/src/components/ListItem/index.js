@@ -40,7 +40,8 @@ function ListItem(props) {
                     display: "flex",
                     marginLeft: "auto",
                     marginRight: "auto",
-                    textAlign: "center"
+                    textAlign: "center",  
+                    justifyContent: "center"
                   }}
                 >
                   <img src={props.image} alt="Book cover" />
@@ -64,7 +65,8 @@ function ListItem(props) {
                   }
                     className="button"
                     style={{
-                      margin: "2px",
+                      margin: "3px",
+                      marginBottom:"3px",
                       backgroundColor: "#32174d",
                       color: "#fff",
                     }}
@@ -76,7 +78,8 @@ function ListItem(props) {
                 <button
                   className="button"
                   style={{
-                    margin: "2px",
+                    margin: "3px",
+                    marginBottom:"3px",
                     backgroundColor: "#32174d",
                     color: "#fff",
                   }}
